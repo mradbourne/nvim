@@ -20,5 +20,8 @@ return {
         git_placement = 'after',
       },
     },
+    update_focused_file = {
+      enable = true,
+    },
   },
 }
