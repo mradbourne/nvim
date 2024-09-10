@@ -5,14 +5,14 @@ return {
     'nvim-tree/nvim-web-devicons',
   },
   keys = {
-    { '\\', ':NvimTreeToggle<CR>', { desc = 'nivm-tree toggle' } },
+    { '\\', ':NvimTreeToggle<CR>', { desc = 'nvim-tree toggle' } },
   },
   opts = {
     sort = {
       sorter = 'case_sensitive',
     },
     view = {
-      width = 50,
+      width = 40,
     },
     renderer = {
       group_empty = true,
