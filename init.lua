@@ -124,10 +124,10 @@ require('lazy').setup({
 
       -- Document existing key chains
       require('which-key').add {
-        {'<leader>h', group = 'Git [H]unk' },
-        {'<leader>h', group = 'Git [H]unk', mode = 'v' },
-        {'<leader>s', group = '[S]earch with Telescope' },
-        {'<leader>t', group = '[T]oggle' },
+        { '<leader>h', group = 'Git [H]unk' },
+        { '<leader>h', group = 'Git [H]unk', mode = 'v' },
+        { '<leader>s', group = '[S]earch with Telescope' },
+        { '<leader>t', group = '[T]oggle' },
       }
     end,
   },
