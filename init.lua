@@ -110,7 +110,7 @@ require('lazy').setup({
   -- This is often very useful to both group configuration, as well as handle
   -- lazy loading plugins that don't need to be loaded immediately at startup.
   --
-  -- For example, in the following configuration, we use:
+  -- For example, in the which-key configuration, we use:
   --  event = 'VimEnter'
   --
   -- which loads which-key before all the UI elements are loaded. Events can be
@@ -120,7 +120,15 @@ require('lazy').setup({
   -- after the plugin has been loaded:
   --  config = function() ... end
 
-  { -- Useful plugin to show you pending keybinds.
+  {
+    'nordtheme/vim',
+    init = function()
+      vim.cmd.colorscheme 'nord'
+      vim.cmd.highlight 'Normal ctermbg=NONE guibg=NONE'
+      vim.cmd.highlight 'CursorLine ctermbg=NONE guibg=NONE'
+    end,
+  },
+  {
     'folke/which-key.nvim',
     event = 'VimEnter', -- Sets the loading event to 'VimEnter'
     config = function() -- This is the function that runs, AFTER loading
